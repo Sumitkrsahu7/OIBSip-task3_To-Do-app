@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/spidy.jpg');
+    position: relative;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* color: white; */
+    color: rgb(2, 2, 2);
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    backdrop-filter: blur(9px);
+    width: 38vw;
+    height: 60vh;
+    margin: 0 auto;
+    top: 20px;
+    padding: 20px;
+    border: 2px solid black;
+    overflow: auto;
+}
+.container::-webkit-scrollbar{
+    display: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.inputss{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ .input {
+    background-color: #212121;
+    width: 25vw;
+    height: 4vh;
+    padding: 8px;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    margin: 0px 8px 0 34px
+  }
+  
+  .input:focus {
+    color: rgb(0, 255, 255);
+    background-color: #212121;
+    outline-color: rgb(0, 255, 255);
+    box-shadow: -2px -3px 10px rgb(0, 255, 255);
+    transition: .1s;
+    transition-property: box-shadow;
+  }
+
+
+ 
+
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+ button {
+    border-radius: 10px;
+    width: 10vw;
+    padding: 12px 0;
+    font-size: .8rem;
+    border: 0;
+    color: white;
+    background-color: #212121;
+    border: 2px solid white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all .3s ease;
+   }
+   
+   button:hover {
+    letter-spacing: 2px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+   }
+   
+   button:active {
+    letter-spacing: 2px;
+    background-color: hsl(150deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+    transform: translateY(6px);
+    transition: 100ms;
+   }
+
+
+
+/* Media queries */
+@media (max-width: 975px) {
+    html{
+        font-size: 75%;
+    }
+    .container {
+        width: 45%;
+    }
+
+    .input {
+        width: 75%;
+        
+        margin-right: 10px;
+    }
+
+    button {
+        width: 40%;
+        font-size: 1rem;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        width: 55%;
+    }
+
+    .input {
+        width: 70%;
+        margin-right: 10px;
+        font-size: .9rem;
+        height: 3vh;
+    }
+
+    button {
+        width: 34%;
+        font-size: .9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 60%;
+    }
+
+    .input {
+        width: 90%;
+        margin-right: 10px;
+        font-size: .8rem;
+        height: 2.6vh;
+    }
+
+    button {
+        width: 34%;
+        font-size: 0.6rem;
+    }
+}
